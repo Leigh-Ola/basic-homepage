@@ -1,0 +1,111 @@
+body{
+	font-size: 100%; margin: 0px; padding: 0px; background: white;
+	font-family: Font Awesome, FontAwesome, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	display: flex; flex-flow: column nowrap;
+}
+
+header{
+	display: flex; width: 100%;
+	padding: 25px; box-sizing: border-box;
+	height: 120px;
+}
+header a{
+	width: 70px; height: 70px; border-radius: 50%; 
+	margin: auto auto auto 20px; overflow: hidden;
+	box-shadow: 0px 0px 2px #0a2651, 2px 2px 2px #0a2651, -2px -2px 2px #06062d;
+}
+header a img{
+	display: block; width: 100%; height: 100%;
+}
+
+
+main{
+	display: block; box-sizing: border-box;
+	width: 100%; padding: 50px 0px;
+	/* background: grey; */
+}
+
+main div.headings{
+	width: 100%; padding: 50px 10px; box-sizing: border-box;
+	background: white; display: flex; color: #06062d;
+	flex-flow: column nowrap; align-items: center;
+}
+main div.headings h1{
+	font-size: 4.5em;
+	margin: 10px auto 20px auto;
+	text-align: center;
+}
+
+main div.buttonsbox{
+	display: flex; width: 100%; flex-flow: row wrap;
+	justify-content: space-evenly; padding: 50px 10px 10px 10px; box-sizing: border-box;
+	align-content: space-between; align-items: center;
+}
+
+/* div.buttonsbox aside{
+	width: 150px; height: 550px; overflow: visible; position: relative;
+	background: red; display: block; flex-flow: column nowrap;
+}
+
+main div.buttonsbox aside  a{
+	height: 200px; min-height: 200px; flex-shrink: 0;
+} */
+main div.buttonsbox a{
+	width: 200px; max-width: 200px; height: auto; min-height: 50px; margin: 20px 0px; flex-shrink: 0;
+	border-radius: 3px; background: linear-gradient(45deg,#0a2651, #06062d);
+	color: white; box-sizing: border-box; position: relative; text-decoration: none;
+	font-size: 1.05em; overflow: visible;  transition: all 0.3s ease;
+	font-family: FontAwesome, Verdana, Geneva, Tahoma, sans-serif;
+}
+div.buttonsbox a:hover{
+	box-shadow: 2px 2px 8px #06062d;
+}
+main div.buttonsbox a i{
+	position: absolute; z-index: 1; bottom: calc(100% - 1em); left: calc(100% - 1em);
+	background: transparent; color: #06062d; font-size: 0.8em; transition: all 0.3s ease;
+}
+div.buttonsbox a:hover i{
+	bottom: calc(100% - 0.3em); left: calc(100% - 0.3em);
+}
+div.buttonsbox a button{
+	width: 100%; height: auto; position: relative; z-index: 2;
+	background: transparent; color: inherit; font: inherit;
+	font-size: inherit; border: none; cursor: pointer; display: flex;
+	justify-content: center; flex-flow: column nowrap;
+	padding: 20px 10px 0px 10px; box-sizing: border-box;
+}
+div.buttonsbox a button p{
+	background: rgba(250, 250, 250, 0.15); padding: 3px; box-sizing: border-box;
+	color: #06062d; border-radius: 3px;
+}
+
+/* footer */
+footer{
+	display: flex; width: 100%; align-self: flex-end; margin: 0px;
+	padding: 15px; box-sizing: border-box; height: 90px;
+}
+footer div{
+	width: 50px; height: 50px; border-radius: 50%;  
+	margin-left: auto; align-self: flex-end; overflow: hidden;
+	box-shadow: 0px 0px 2px #03a84e, 2px 2px 2px #03a84e, -2px -2px 2px #025c2a;
+	display: flex; background: #03a84e;
+}
+footer div a.fa{
+	font-size: 2.3em; margin: auto; text-decoration: none; color: white;
+}
+
+/* responsive */
+@media only screen and (max-width: 799px) {
+	main{
+		display: block; box-sizing: border-box;
+		width: 100%; padding: 20px 0px;
+	}	
+	main div.buttonsbox{
+		/* flex-flow: column nowrap; */
+		width: 250px; margin: 20px auto;
+		align-content: stretch;
+	}
+	footer div{
+		margin: auto;
+	}
+}
